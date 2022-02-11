@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// variables
+$header-color: #012169;
+
+input {
+  margin: 2px;
+  padding: 7px 10px;
+  color: #000;
+  width: 5em;
+  height: 36px;
+  &:disabled {
+    background-color: #e8e8e8;
+  }
+}
+
+// Analysis Styles
+
+.tableBackground {
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.48);
+  overflow: auto;
+}
+
+.tab {
+  background-color: white;
+  text-align: center;
+  padding: 1em 0.4em;
+  margin: 1em;
+  border-radius: 0.3em;
+  border: 2px solid $header-color;
+  &.active {
+    background-color: $header-color;
+    color: white;
+    border-color: white;
+  }
+}
+
+.value-progress-container {
+  display: flex;
+  margin: 1.5em 0;
+  justify-content: center;
+  background-color: white;
+  padding: 1.5em 0;
+  border-radius: 1em;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.48);
+}
+
+.value-progress-container > table > thead > tr {
+  border-bottom: 2px solid #022069;
+  color: #022069;
+}
+
+// MyFirm Styles
+
+.myfirm-button {
+  background-color: #0d6efd !important;
+  color: white;
+  margin: 0.8em;
+}

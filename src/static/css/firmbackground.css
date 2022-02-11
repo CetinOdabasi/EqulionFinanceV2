@@ -1,0 +1,81 @@
+/* #firmbackgroundform {
+  width: 80%;
+  max-width: 96%;
+  margin: 0px auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+} */
+
+label {
+  font-weight: 900;
+  vertical-align: top;
+  display: inline-block;
+  color: #000;
+  flex: 1;
+}
+
+.firmbackgroundfulldiv {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 30px;
+  /* background-image: url(./bg.png); */
+}
+
+.ProceedButton {
+  width: 400px;
+  height: 42px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  background: linear-gradient(75.77deg, #5d8af2, #4ea3e8);
+  color: #fff;
+  border-radius: 18px;
+}
+
+.formbackgroundlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.formbackgroundlogo img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#fieldset tr {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+}
+
+#tabl {
+  width: 800px;
+  font-size: small;
+}
+
+.aligned_form {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  height: 475px;
+}
+#labelform {
+  text-align: right;
+  clear: both;
+  float: left;
+  margin-right: 15px;
+  width: 100px;
+}
+/* td {
+  text-align: center;
+  vertical-align: middle;
+} */

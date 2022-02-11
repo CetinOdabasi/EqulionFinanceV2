@@ -1,0 +1,106 @@
+* {
+  font-family: Georgia;
+}
+.smallChart {
+  width: 40%;
+  height: 50%;
+  display: inline-block;
+  margin: 40px;
+  text-align: center;
+}
+
+.firstline {
+  display: inline-block;
+}
+.chart_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.chart_business_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart_title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #607d8b;
+  display: inline-block;
+
+  /* float: right; */
+}
+
+.title {
+  display: grid;
+  white-space: nowrap;
+  font-weight: bold;
+  min-width: 60px;
+  width: auto;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.container1 {
+  min-width: 60px;
+  width: auto;
+}
+.result_table {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  width: 150px;
+  left: -170px;
+}
+
+.title_container_y {
+  display: flex;
+  flex-direction: column;
+  top: 38px;
+  position: relative;
+}
+
+.title_container_x {
+  display: flex;
+  flex-direction: row;
+}
+
+.row_container {
+  display: flex;
+  flex-direction: row;
+}
+.right_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.result_data {
+  font-weight: 600;
+  font-size: 20px;
+  color: #607d8b;
+}
+
+.in_business_name {
+  font-weight: 100;
+  display: inline-block;
+}
+
+.business_name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #607d8b;
+  margin: 10px;
+}
+
+.box_container {
+  margin: 10px;
+}
+
+.paranthesis {
+  display: inline-block;
+  font-weight: 200;
+  font-size: 16px;
+  color: #607d8b;
+}

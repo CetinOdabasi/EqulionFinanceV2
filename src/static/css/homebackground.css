@@ -1,0 +1,56 @@
+.backgroundcontent {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  align-items: center !important;
+  justify-content: center !important;
+
+  height: 100%;
+  width: 100%;
+}
+
+.cardhome {
+  position: absolute;
+  bottom: -20px;
+  background-color: transparent !important;
+  border: none !important;
+  text-align: center;
+}
+
+.cardcenter {
+  display: flex;
+  justify-content: center;
+}
+.card-title {
+  font-size: 30px;
+  position: relative;
+}
+
+.card h5 {
+  font-size: 60px;
+  color: white !important;
+  position: relative;
+}
+.card-title2 {
+  font-size: 60px;
+}
+#imgok {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+}
+
+#okbutton {
+  height: 80px;
+  width: 240px;
+  text-align: center;
+  align-items: center;
+}
+
+.backgroundbutton {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+}

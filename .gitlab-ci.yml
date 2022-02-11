@@ -1,0 +1,86 @@
+stages:
+  - test
+  - build
+  - deploy
+
+cache:
+  paths:
+  - node_modules/
+
+before_script:
+  - npm install
+
+# test:lint:
+#   stage: test
+#   allow_failure: true
+#   tags:
+#     - money
+#   script:
+#     - ng lint
+
+# test:e2e:
+#   stage: test
+#   tags:
+#     - money
+#   script: 
+#     - ng e2e
+
+# test:
+#   stage: test
+#   tags:
+#     - money
+#   coverage: '/Lines \W+: (\d+\.\d+)%.*/'
+#   script: 
+#     - ng test --code-coverage
+
+build:staging:
+  stage: build
+  tags:
+    - money
+  only:
+    - master
+  script:
+    - npm run build
+  artifacts:
+    name: "$CI_COMMIT_REF_NAME"
+    paths:
+      - build/
+
+build:production:
+  stage: build
+  tags:
+    - money
+  only:
+    - tags
+  script:
+    - npm run build
+  artifacts:
+    name: "$CI_COMMIT_REF_NAME"
+    paths:
+      - build/
+
+deploy:staging:
+  stage: deploy
+  tags:
+    - money
+  only:
+    - master
+  environment:
+    name: staging
+    url: https://staging.equlion.com
+  script:
+    - sudo rsync -au build/* /srv/equlion/staging/frontend
+    - sudo chown -R www-data:www-data /srv/equlion/staging/frontend
+
+deploy:production:
+  stage: deploy
+  tags:
+    - money
+  environment:
+    name: production
+    url: https://equlion.com
+  only:
+    - tags
+  script:
+    - sudo rsync -au build/* /srv/equlion/production/frontend
+    - sudo chown -R www-data:www-data /srv/equlion/production/frontend

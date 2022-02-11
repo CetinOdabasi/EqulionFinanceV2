@@ -1,0 +1,33 @@
+#cardbutton {
+  position: relative;
+  bottom: 200px !important;
+  background-color: white !important;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 30px !important;
+}
+
+.button_logo {
+  width: 50px;
+}
+.buttonlink {
+  height: 300px;
+  width: 350px;
+  margin: 30px !important;
+  border-radius: 30px;
+}
+
+.homebuttoncontent {
+  text-align: center;
+  align-items: center;
+}
+
+.cardtext {
+  font-weight: bold;
+}
+
+.buttonname {
+  font-weight: bold;
+}
+

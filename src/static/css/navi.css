@@ -1,0 +1,17 @@
+.bg-light {
+  background-color: #145f8a !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+.nav-link:hover{
+  color: #fff !important;
+}
+
+.btn-outline-success {
+  border-color: #197187 !important;
+  color: rgb(255, 255, 255) !important;
+}
+input {
+  height: 2.4em !important;
+}

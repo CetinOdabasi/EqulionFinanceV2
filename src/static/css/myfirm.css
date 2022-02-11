@@ -1,0 +1,72 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+/* label {
+  display: block;
+  width: 6em;
+  margin: 0.5em 0;
+  font-weight: bold;
+} */
+
+/* input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: 0.4em;
+} */
+
+.fieldContainer {
+  padding: 30px 40px;
+  margin-bottom: 20px;
+}
+
+.sideNavs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.containerHeader {
+  margin: -5px;
+  color: black;
+  font-size: 24px;
+  border-bottom: 2px solid #cacaca;
+  font-weight: 700;
+}
+
+.my-firm-container {
+  min-height: 350px;
+}
+
+.my-firm-container .containerHeader {
+  color: #2555b9 !important;
+  font-size: 16px !important;
+}
+
+.FirmButton {
+  width: 33%;
+  height: 44px;
+  text-decoration: none;
+  margin-right: 10px;
+  color: white;
+  background-color: #2555b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.FirmActionButton img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.FirmField {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ededed;
+  margin-top: 20px;
+  font-size: 16px;
+}
